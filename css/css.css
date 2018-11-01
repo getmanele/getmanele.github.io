@@ -30,7 +30,7 @@ ul, li, a ,p {
 	position: relative;
 	width: 100%;
 	height: 867px;
-	-webkit-background-size: 100%;
+	-webkit-background-size: cover;
 	background-size: cover;
 	background-color: rgb(68, 68, 68);
 	background-image: url('../img/main-bg.jpg');
@@ -49,6 +49,8 @@ ul, li, a ,p {
 
 .menu__list {
 	list-style: none;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
@@ -81,12 +83,10 @@ li a{
 }
 
 .im2 {
-	/*font-family: "Muller","Arial",sans-serif;*/
 	font-size: 45px;
 	color: #f8df20;
 	margin: 0;
 	text-shadow: 4px 4px 2px #000;
-	/*font-family: "Muller","Arial",sans-serif;*/
 	font-family: "Muller","Arial",sans-serif;
 }
 
@@ -149,8 +149,13 @@ li a{
 }
 
 .skils__items {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
 	justify-content: space-between;
 	max-width: 1000px;
 	margin: 0 auto;

@@ -9,6 +9,7 @@
 
 	.menu__list {
 		justify-content: space-around;
+		-ms-flex-pack: distribute;
 	}
 
 	li a {
