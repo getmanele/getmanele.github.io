@@ -97,6 +97,10 @@ li a{
 
 /*<!-- 2) about-me -->*/
 
+.about-me h1 {
+	display: none;
+}
+
 .about-me {
 	width: 100%;
 	background-image: url('../img/about-me.png');
