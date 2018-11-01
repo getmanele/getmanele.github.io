@@ -7,6 +7,14 @@
 		height: 500px;
 	}
 
+	.menu__list {
+		justify-content: space-around;
+	}
+
+	li a {
+		font-size: 20px;
+	}
+
 	.main-h1 {
 		left: calc(100%/2 - 90px);
 
