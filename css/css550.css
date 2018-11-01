@@ -2,31 +2,21 @@
 
 
 
-@media (max-width: 768px) {
-	.main-header {
-		height: 500px;
-	}
-
+@media (max-width: 550px) {
 	.menu__list {
-		justify-content: space-around;
+		display: block;
+
 	}
 
-	li a {
-		font-size: 20px;
+	.menu__list li {
+		text-align: center;
+		border: 1px solid #282922;
 	}
-
+	
 	.main-h1 {
-		left: calc(100%/2 - 90px);
+		top: 60%;
+		left: calc(100%/2 - 100px);
 	}
-
-	.im {
-		font-size: 39px;
-	}
-
-	.im2, .im3 {
-		font-size: 16px;
-	}
-
 
 }
 
