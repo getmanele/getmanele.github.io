@@ -15,6 +15,10 @@
 		font-size: 20px;
 	}
 
+	.container {
+		min-width: 80%;
+	}
+
 	.main-h1 {
 		left: calc(100%/2 - 90px);
 	}
@@ -24,6 +28,10 @@
 	}
 
 	.im2, .im3 {
+		font-size: 16px;
+	}
+
+	.about-me__title p {
 		font-size: 16px;
 	}
 
