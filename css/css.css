@@ -6,11 +6,14 @@
 
 h1,h2,h3,h4,h5,h6,a,p,li {
 	font-family: "MullerNarrow-Light","Arial",sans-serif;
+	margin: 0;
+	padding: 0;
 }
 
 body {
 	padding: 0;
 	margin: 0;
+	background: url('../img/about-me.png');
 }
 
 ul, li, a ,p {
@@ -126,18 +129,51 @@ li a{
 .about-me__title {
 	font-weight: 500;
 	font-size: 24px;
+	padding: 30px 0;
 }
 
 
+/*  3) ==========   Skills   ========== */
 
+.skills {
+	width: 100%;
+	background: rgba(0,0,0,.1);
+	background-repeat: repeat;
+}
 
+.skills__title {
+	font-weight: 500;
+    font-size: 24px;
+	text-align: center;
+	padding: 30px 0;
+}
 
+.skils__items {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 1000px;
+	margin: 0 auto;
+}
 
+.skils__items--all {
+	width: 30%;
+	margin: 0 auto 25px;
+}
 
+.skills__text {
+	text-align: center;
+	line-height: 22px;
+}
 
+.skils__items--all img {
+	display: block;
+	margin: 0 auto 15px;
+}
 
-
-
+.skils__items--all h3 {
+	margin: 10px 0;
+}
 
 
 
