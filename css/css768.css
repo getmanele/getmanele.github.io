@@ -2,7 +2,26 @@
 
 
 
+@media (max-width: 768px) {
+	.main-header {
+		height: 500px;
+	}
 
+	.main-h1 {
+		left: calc(100%/2 - 90px);
+
+	}
+
+	.im {
+		font-size: 18px;
+	}
+
+	.im2, .im3 {
+		font-size: 14px;
+	}
+
+
+}
 
 
 
