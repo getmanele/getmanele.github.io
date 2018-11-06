@@ -236,8 +236,30 @@ li a{
 	font-size: 18px;
 }
 
+/*<!-- 5) begin footer -->*/
 
 
+.social-links--contrast {
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	width: 60%;
+	margin-bottom: 30px;
+}
+
+.social-links--contrast ul {
+	
+}
+
+.social-links--contrast li {
+	list-style: none;
+	padding: 0 30px;
+}
+
+.social-links--contrast img {
+	width: 30px;
+	height: 30px;
+}
 
 
 
