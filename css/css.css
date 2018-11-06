@@ -25,7 +25,6 @@ ul, li, a ,p {
 
 
 
-
 .main-header {
 	position: relative;
 	width: 100%;
@@ -145,13 +144,6 @@ li a{
 	background-repeat: repeat;
 }
 
-.skills__title {
-	font-weight: 500;
-    font-size: 24px;
-	text-align: center;
-	padding: 30px 0;
-}
-
 .skils__items {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -185,19 +177,63 @@ li a{
 }
 
 
+/*  4) ==========   Skills   ========== */
 
+.h2__title {
+	font-family: "MullerNarrow-Light","Arial",sans-serif;
+	font-weight: bold;
+    font-size: 30px;
+    padding: 30px 0;
+    text-align: center;
+}
 
+.portfolio {
+	width: 100%;
+	margin-bottom: 50px;
+}
 
+.portfolio__items {
+	display: flex;
+	justify-content: space-between;
+}
 
+.job {
+	list-style: none;
+	width: 30%;
+	border: 2px solid #e1e1e1;
+}
 
+.job-img {
+	width: 100%;
+}
 
+.job div {
+	background: rgba(0,0,0,.1);
+    background-repeat: repeat;
+    padding-bottom: 15px;
+}
 
+.job h3 {
+	line-height: 22px;
+	margin: 0;
+	padding: 10px 0;
+}
 
+.job p {
+	line-height: 22px;
+	padding-bottom: 10px;
+}
 
+.btn {
+	width: 150px;
+	padding: 0 15px;
+	margin: 30px auto 0;
 
+	background-color: #017bff;
+	border-radius: 10px;
 
-
-
+	line-height: 40px;
+}
 
 
 
