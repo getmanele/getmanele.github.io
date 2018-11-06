@@ -177,7 +177,7 @@ li a{
 }
 
 
-/*  4) ==========   Skills   ========== */
+/*  4) ==========   Portfolio   ========== */
 
 .h2__title {
 	font-family: "MullerNarrow-Light","Arial",sans-serif;
@@ -225,14 +225,15 @@ li a{
 }
 
 .btn {
-	width: 150px;
-	padding: 0 15px;
+	width: 70%;
+	padding: 10px 15px;
 	margin: 30px auto 0;
 
 	background-color: #017bff;
 	border-radius: 10px;
 
-	line-height: 40px;
+	line-height: 24px;
+	font-size: 18px;
 }
 
 

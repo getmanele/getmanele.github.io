@@ -43,6 +43,20 @@
 		width: 100%;
 	}
 
+/*  4) ==========   Portfolio   ========== */
+
+	.portfolio__items {
+		display: block;
+	}
+
+	.job {
+		width: 70%;
+		margin: 0 auto 50px;
+
+	}
+
+
+
 }
 
 
