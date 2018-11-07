@@ -172,6 +172,10 @@ li a{
 	margin: 0 auto 15px;
 }
 
+.github img {
+	width: 128px;
+}
+
 .skils__items--all h3 {
 	margin: 10px 0;
 }
@@ -205,6 +209,7 @@ li a{
 
 .job-img {
 	width: 100%;
+	background-color: #dddddd;
 }
 
 .job div {
