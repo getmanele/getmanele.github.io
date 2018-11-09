@@ -1,0 +1,35 @@
+User-Agent: Yandex
+Host: https://getmanele.github.io
+Disallow: /order_success
+Disallow: /order_fail
+Disallow: /login/fb
+Disallow: /login/vk
+Disallow: /continue
+Disallow: /profile
+Disallow: /rating
+Disallow: /payment
+Allow: /payment/days
+
+User-Agent: Googlebot
+Disallow: /order_success
+Disallow: /order_fail
+Disallow: /login/fb
+Disallow: /login/vk
+Disallow: /continue
+Disallow: /profile
+Disallow: /rating
+Disallow: /payment
+Allow: /payment/days
+
+User-Agent: *
+Disallow: /order_success
+Disallow: /order_fail
+Disallow: /login/fb
+Disallow: /login/vk
+Disallow: /continue
+Disallow: /profile
+Disallow: /rating
+Disallow: /payment
+Allow: /payment/days
+
+Sitemap: https://getmanele.github.io
