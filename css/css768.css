@@ -1,4 +1,8 @@
-
+@media (max-width: 1000px) {
+	.wrapper-img {
+		height: 300px;
+	}
+}
 
 
 
@@ -21,7 +25,8 @@
 	}
 
 	.main-h1 {
-		left: calc(100%/2 - 90px);
+		/*left: calc(100%/2 - 90px);*/
+		left: calc(100%/2);
 	}
 
 	.im {

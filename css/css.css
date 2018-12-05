@@ -126,7 +126,7 @@ li a{
 .container {
 	margin: 0 auto;
 	text-align: center;
-	max-width: 60%;
+	max-width: 70%;
 
 }
 
@@ -225,21 +225,20 @@ li a{
 	list-style: none;
 	width: 30%;
 	border: 2px solid #e1e1e1;
-	/*height: 353px;*/
+	
+}
+
+.wrapper-img {
+	/*width: 343px;*/
+	height: 346px;
+	overflow: hidden;
 }
 
 .job-img {
 	width: 100%;
 	background-color: #dddddd;
-	/*height: 346px;*/
-	/*-o-object-fit: cover;
+/*	-o-object-fit: cover;
 	object-fit: cover*/
-}
-
-.wrapper-img {
-	width: 343px;
-	height: 346px;
-	overflow: hidden;
 }
 
 /*===== popup begin ===== >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/

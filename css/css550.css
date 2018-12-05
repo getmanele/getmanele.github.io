@@ -19,7 +19,7 @@
 	
 	.main-h1 {
 		top: 60%;
-		left: calc(100%/2 - 100px);
+		left: calc(100%/2);
 	}
 
 }
