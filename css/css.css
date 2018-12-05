@@ -307,7 +307,7 @@ li a{
 
 /* The Close Button */
 .close {
-    position: absolute;
+    position: fixed;
     top: 15px;
     right: 35px;
     color: #f1f1f1;
