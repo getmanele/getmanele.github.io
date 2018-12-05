@@ -229,9 +229,10 @@ li a{
 }
 
 .wrapper-img {
-	/*width: 343px;*/
 	height: 346px;
 	overflow: hidden;
+	margin-bottom: 10px;
+	border-bottom: 2px solid #e1e1e1
 }
 
 .job-img {
@@ -311,9 +312,14 @@ li a{
     top: 15px;
     right: 35px;
     color: #f1f1f1;
-    font-size: 40px;
+    background-color: red;
+    font-size: 26px;
     font-weight: bold;
     transition: 0.3s;
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%
 }
 
 .close:hover,
@@ -323,7 +329,7 @@ li a{
     cursor: pointer;
 }
 
-/* 100% Image Width on Smaller Screens */
+/* 100% Image Width on Smaller Screens 
 @media only screen and (max-width: 700px){
     .modal-content {
         width: 100%;
