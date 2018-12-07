@@ -247,10 +247,9 @@ li a{
 }
 
 .wrapper-img {
-	height: 346px;
+	/*height: 346px;*/
+	height: 200px;
 	overflow: hidden;
-	border-bottom: 2px solid #e1e1e1
-
 	border-bottom: 2px solid #e1e1e1;
 }
 
@@ -261,15 +260,37 @@ li a{
 	object-fit: cover*/
 }
 
+/*====== картинки Макс ======*/
+
+.wrapper-img {
+	background-image: url(../img/img_adaptive/MACBOOK_portfolio.jpg);
+	
+	-webkit-background-size: contain;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.second-job {
+	background-image: url(../img/img_adaptive/MACBOOK_nerds.jpg);
+}
+
+.third-job {
+	background-image: url(../img/img_adaptive/MACBOOK_divier.jpg);
+}
+
+/*====== картинки Макс конец ======*/
+
 /*===== popup begin ===== >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 #myImg, #myImg2, #myImg3 {
     cursor: pointer;
     transition: 0.3s;
+    /*visibility: hidden;*/
+    opacity: 0;
 }
 
 #myImg:hover, #myImg2:hover, #myImg3:hover {
-	opacity: 0.7;
+	opacity: 1;
 }
 
 /* The Modal (background) */
@@ -348,13 +369,6 @@ li a{
     cursor: pointer;
 }
 
-/* 100% Image Width on Smaller Screens 
-@media only screen and (max-width: 700px){
-    .modal-content {
-        width: 100%;
-    }
-}
-
 /*===== popup end   ===== >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 .job .block-title {
 	background: rgba(0,0,0,.1);
@@ -391,6 +405,9 @@ li a{
 
 /*<!-- 5) begin footer -->*/
 
+.footer	{
+
+}
 
 .social-links--contrast {
 	display: -webkit-box;
