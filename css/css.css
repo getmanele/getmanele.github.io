@@ -128,7 +128,7 @@ li a{
 }
 
 .container {
-	/*text-align: center;*/
+	text-align: center;
 	/*width: 100%;*/
 	width: 1200px;
 	padding: 0 15px;
