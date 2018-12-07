@@ -128,8 +128,9 @@ li a{
 }
 
 .container {
-	text-align: center;
-	width: 100%;
+	/*text-align: center;*/
+	/*width: 100%;*/
+	width: 1200px;
 	padding: 0 15px;
 	padding-right: 15px;
 	padding-left: 15px;
@@ -154,7 +155,7 @@ li a{
 .about-me__title {
 	font-weight: 500;
 	font-size: 24px;
-	padding: 30px 0;
+	padding: 30px 50px;
 }
 
 
@@ -225,7 +226,6 @@ li a{
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 	margin: 0 -15px;
-	width: 100%;
     text-align: center!important;
 }
 
