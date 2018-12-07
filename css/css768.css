@@ -32,14 +32,6 @@
 
 
 
-@media (max-width: 700px) {
-	.skils__items--all {
-		width: 100%;
-	}
-}
-
-
-
 @media (max-width: 768px) {
 	.main-header {
 		height: 500px;
@@ -50,17 +42,11 @@
 		-ms-flex-pack: distribute;
 	}
 
-	.menu__list {
-		display: block;
-
-	}
-
 	li a {
 		font-size: 20px;
 	}
 
 	.main-h1 {
-		/*left: calc(100%/2 - 90px);*/
 		left: calc(100%/2);
 	}
 
@@ -100,7 +86,20 @@
 }
 
 
+@media (max-width: 700px) {
+	.skils__items--all {
+		width: 100%;
+	}
 
+	.menu__list {
+		display: block;
+	}
+
+	.main-h1 {
+		left: calc(100%/2);
+		top: 70%;
+	}
+}
 
 
 
