@@ -1,6 +1,40 @@
-@media (max-width: 1000px) {
-	.wrapper-img {
-		height: 300px;
+@media (max-width: 1200px) {
+	.container {
+		width: 992px;
+	}
+
+	.skils__items {
+		max-width: 900px;
+	}
+}
+
+@media (max-width: 992px) {
+	.container {
+		width: 100%;
+	}
+
+	.portfolio__items {
+		display: block;
+		margin: 0;
+	}
+
+	.job {
+		max-width: none;
+	}
+
+	.skils__items--all {
+		width: 40%;
+	}
+}
+
+
+
+
+
+
+@media (max-width: 700px) {
+	.skils__items--all {
+		width: 100%;
 	}
 }
 
@@ -16,12 +50,13 @@
 		-ms-flex-pack: distribute;
 	}
 
-	li a {
-		font-size: 20px;
+	.menu__list {
+		display: block;
+
 	}
 
-	.container {
-		min-width: 80%;
+	li a {
+		font-size: 20px;
 	}
 
 	.main-h1 {
@@ -44,9 +79,9 @@
 
 /*3) ==========   Skills   ==========	*/
 
-	.skils__items--all {
+	/*.skils__items--all {
 		width: 100%;
-	}
+	}*/
 
 /*  4) ==========   Portfolio   ========== */
 
@@ -55,7 +90,7 @@
 	}
 
 	.job {
-		width: 70%;
+		width: 100%;
 		margin: 0 auto 50px;
 
 	}
