@@ -16,6 +16,8 @@
 	.portfolio__items {
 		display: block;
 		margin: 0;
+		margin-bottom: 50px;
+
 	}
 
 	.job {
