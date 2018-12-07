@@ -16,12 +16,13 @@
 	.portfolio__items {
 		display: block;
 		margin: 0;
-		margin-bottom: 50px;
+
 
 	}
 
 	.job {
 		max-width: none;
+		margin-bottom: 50px;
 	}
 
 	.skils__items--all {
