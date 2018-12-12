@@ -41,8 +41,12 @@
 	}
 
 	.menu__list {
-		justify-content: space-around;
 		-ms-flex-pack: distribute;
+		justify-content: space-around;
+	}
+
+	.menu__list li {
+		text-align: center;
 	}
 
 	li a {
@@ -84,7 +88,7 @@
 
 	}
 
-
+c
 
 }
 
@@ -96,6 +100,11 @@
 
 	.menu__list {
 		display: block;
+	}
+
+	.menu__list li {
+		text-align: center;
+		border: 1px solid #282922;
 	}
 
 	.main-h1 {
