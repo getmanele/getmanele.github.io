@@ -271,19 +271,21 @@ li a{
 /*====== картинки Макс ======*/
 
 .wrapper-img {
-	background-image: url(../img/img_adaptive/MACBOOK_portfolio.jpg);
-	
 	-webkit-background-size: contain;
 	background-size: contain;
 	background-repeat: no-repeat;
 }
 
+.first-job {
+	background-image: url(../img/img_adaptive/MACBOOK_portfolio_a.jpg);
+}
+
 .second-job {
-	background-image: url(../img/img_adaptive/MACBOOK_nerds.jpg);
+	background-image: url(../img/img_adaptive/MACBOOK_nerds_a.jpg);
 }
 
 .third-job {
-	background-image: url(../img/img_adaptive/MACBOOK_divier.jpg);
+	background-image: url(../img/img_adaptive/MACBOOK_divier_a.jpg);
 }
 
 /*====== картинки Макс конец ======*/
