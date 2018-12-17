@@ -233,7 +233,7 @@ li a{
 	display: flex;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
-	margin: 0 -15px;
+	margin: 0 -15px 30px;
     text-align: center!important;
 }
 
@@ -288,18 +288,22 @@ li a{
 	background-image: url(../img/img_adaptive/MACBOOK_divier_a.jpg);
 }
 
+.fours-job {
+	background-image: url(../jobs/karo-karo-karo/app/img/screen/fours_ab.jpg);
+}
+
 /*====== картинки Макс конец ======*/
 
 /*===== popup begin ===== >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
-#myImg, #myImg2, #myImg3 {
+#myImg, #myImg2, #myImg3, #myImg4 {
     cursor: pointer;
     transition: 0.3s;
     /*visibility: hidden;*/
     opacity: 0;
 }
 
-#myImg:hover, #myImg2:hover, #myImg3:hover {
+#myImg:hover, #myImg2:hover, #myImg3:hover, #myImg4:hover {
 	opacity: 1;
 }
 
