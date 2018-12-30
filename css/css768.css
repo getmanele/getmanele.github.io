@@ -61,6 +61,19 @@
 		font-size: 39px;
 	}
 
+	.main-h1 .im:after {
+		content: "";
+		width: 100px;
+		height: 75px;
+		background-image: url(../img/hat.png);
+		background-position: center;
+		-webkit-background-size: contain;
+		background-size: contain;
+		background-repeat: no-repeat;
+		right: -34px;
+		bottom: 5px;
+	}
+
 	.im2, .im3 {
 		font-size: 16px;
 	}

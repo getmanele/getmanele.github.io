@@ -118,6 +118,7 @@ li a{
 	background-repeat: no-repeat;
 	right: -13px;
 	bottom: -9px;
+	transform: rotate(-5deg);
 }
 
 .im2 {
