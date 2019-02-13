@@ -1,0 +1,684 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+@import "parts/block_1_header"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+// body input:focus:required:invalid,
+// body textarea:focus:required:invalid
+// 	color: #666
+// body input:required:valid,
+// body textarea:required:valid
+// 	color: #666
+
+// html, body
+// 	height: 100%
+
+section, header
+	position: relative
+	background-size: cover
+	background-position: center
+
+section
+	background-color: #fff
+	&.inverse
+		color: #fff
+		background-color: $dark
+	.h2
+		font-size: 30px
+		font-weight: 800
+		color: $accent
+		span
+			color: #fff
+// .fa
+// 	font-family: 'Font Awesome 5 Free'
+
+// общие классы =================================================
+
+.text-center 
+	text-align: center
+
+// preloader start
+
+@mixin opacity($opacity)
+	opacity: $opacity / 100
+	filter: alpha(opacity = $opacity)
+
+.preloader
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	z-index: 15
+	background-color: $dark
+	.pulse
+		position: relative
+		left: 50%
+		top: 50vh
+		margin:
+			left: -40px
+			top: -40px
+		&::before, &::after
+			content: ''
+			border: 5px solid #323232
+			width: 80px
+			height: 80px
+			border-radius: 500px
+			position: absolute
+		&::before
+			animation: pulse-outer .8s ease-in infinite
+		&::after
+			animation: pulse-inner .8s linear infinite
+
+@keyframes pulse-outer
+	0%
+		@include opacity(100)
+	50%
+		@include opacity(50)
+	100%
+		@include opacity(0)
+@keyframes pulse-inner
+	0%
+		@include opacity(0)
+		transform: scale(0)
+	100%
+		@include opacity(100)
+		transform: scale(1)
+
+// preloader end
+
+// выкл. выделение текста - start
+.noselect
+    -moz-user-select: none
+    -webkit-user-select: none
+    -ms-user-select: none
+    -o-user-select: none
+    user-select: none
+
+// выкл. выделение текста - end
+
+// ======           start CSS           ======
+
+
+
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.15
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+	&.ishome
+		.site-header
+			min-height: 620px
+			height: 100vh
+			background-color: $dark
+			color: #fff
+			.top-line
+				position: absolute
+				width: 100%
+				z-index: 1
+				padding-top: 40px
+
+.h1, .h2, .h3, .h4, .h5, .h6
+	line-height: 1.4
+	text-transform: uppercase
+
+#my-page
+	overflow-x: hidden
+
+
+
+// ===== 2-й блок =====
+
+$colors: $blue, $red, $accent
+
+@for $i from 1 through length($colors)
+	.carousel-services .owl-item:nth-child(#{length($colors)}n+#{$i})
+		background-color: nth($colors, $i)
+
+.carousel-services
+	background-color: $dark
+	&-item
+		color: #fff
+		font-size: 18px
+		font-weight: 300
+		position: relative
+		display: flex
+		flex-direction: column-reverse
+		&:hover
+			.carousel-services-image
+				opacity: 1
+		.carousel-logo
+			text-align: center
+
+			img
+				width: 100px
+				height: auto
+				display: inline-block
+
+
+	.owl-item
+		&:nth-child(2n+2)
+			.carousel-services-item
+				flex-direction: column
+	&-image
+		background-size: cover
+		background-position: center
+		opacity: .7
+		transition: opacity .5s ease
+	&-content
+		position: relative
+		padding: 60px 10%
+	&-composition
+		margin: auto
+		text-align: center
+		width: 100%
+		.h3
+			text-transform: uppercase
+			font-weight: 800
+			font-size: 30px
+			margin-top: 5px
+			margin-bottom: 20px
+			span
+				font-weight: normal
+				font-size: 18px
+				font-weight: 300
+				display: block
+
+	&-list
+		margin: 0
+		padding: 0
+		list-style-type: none
+		margin-bottom: 25px
+		li
+			padding: 9px
+			border-bottom: 1px solid rgba(#000, .12)
+			&:last-child
+				border-bottom: none
+			strong
+				font-family: firasans, sans-serif
+				color: #4a4a4a
+			.fas
+				font-size: 14px
+	
+	.owl-nav
+		position: absolute
+		top: 0
+		width: 100%
+		// .owl-prev
+		> button
+			width: 64px
+			height: 64px
+			background-color: #fff !important
+			color: $dark
+			position: absolute
+			text-align: center
+			line-height: 64px
+			&.owl-prev
+				left: 0
+				
+			&.owl-next
+				right: 0
+
+.owl-carousel
+	.owl-item
+		backface-visibility: inherit
+
+
+
+// =======  3-я секция  =======
+
+.s
+	&-king, &-review, &-partners
+		padding: 5% 0
+	&-king
+		p
+			margin: 30px 0
+			font-size: 1em
+
+.section-overlay
+	&:before
+		content: ""
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background-color: $over
+		opacity: .92
+
+.fotorama
+	background-color: rgba($dark, .4)
+	&__nav
+		&-wrap
+			position: absolute
+			bottom: 15px
+			padding: 0 20px
+			width: 100%
+	&__thumb
+		border: 5px solid #fff
+		transition: border-color .5s ease
+		&-border
+			border-color: #3d3c3c
+	&__active
+		.fotorama__thumb
+			border-color: #3d3c3c
+	// тень перед картинкой
+	&__nav:after, &__stage:after, &__nav:before, &__stage:before
+		display: none
+		
+	// стрелки вперед/назад
+	&__arr-
+		&-prev, &-next
+			&::before
+				font-family: "Font Awesome 5 Free"
+				font-weight: bold
+				font-size: 32px
+		&-next
+			&::before
+				content: "\f105"
+		&-prev
+			&::before
+				content: "\f104"
+
+// =============================    4-й блок  начало ===============================
+
+.s
+	&-call
+		background-image: url(../img/4_photo.jpg)
+		background-size: contain
+		background-repeat: no-repeat
+		background-position: 15%
+		&::before
+			content: ''
+			width: 50%
+			right: 0
+			height: 100%
+			position: absolute
+			background-color: rgba($accent, .82)
+		&.inverse
+			background-color: #fff
+
+.callback
+	padding: 25% 0
+	position: relative
+	input, textarea, select,
+	.selectize-control .selectize-input,
+	.selectize-control.single .selectize-input.input-active
+		background-color: transparent
+		/*border: darken($accent, 20%) 1px solid*/
+		border: rgba(#000, .1) 1px solid
+		border-bottom: rgba(#000, .1) 1px solid
+		border-radius: 2px
+		padding: 8px 22px
+		/*для padding-ов select-у*/
+		-webkit-appearance: none 
+		-moz-appearance: none
+		appearance: none
+		/*не стоит - пусть видят!*/
+		/*outline: none*/
+		color: #fff
+		width: 100%
+		margin-top: 17px
+
+		&::-webkit-input-placeholder
+			color: #fff
+			opacity: 1
+		&::-moz-input-placeholder
+			color: #fff
+			opacity: 1
+		&::-ms-input-placeholder
+			color: #fff
+		option
+			color: #333
+
+	.selectize-control .selectize-input
+		box-shadow: none
+		overflow: inherit
+		line-height: inherit
+		// padding: 8px 22px
+		// -webkit-appearance: none 
+		// -moz-appearance: none
+		// appearance: none
+		input
+			font-size: 16px
+
+		// &.dropdown-active::before
+		// 	background-color: transparent
+
+	.selectize-control.single
+		.selectize-input
+			&:after
+				border: none
+				content: '\f107'
+				font-family: "Font Awesome 5 Free"
+				font-weight: bold
+				position: absolute
+				right: 30px
+				top: 13px
+			&.dropdown-active:after
+				content: '\f106'
+		.selectize-dropdown
+			font-size: 15px
+			border: none
+			border-radius: 0
+			&-content
+				.option
+					padding: 10px 22px
+					&.active
+						background-color: lighten($accent, 25)
+
+
+	.success
+		display: none
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		text-transform: uppercase
+		font-weight: bold
+		padding-top: 20px
+		// display: flex
+		z-index: 10
+		span
+			margin: auto
+		& ~ *
+			transition: all .5s ease
+		&.active
+			& ~ *
+				opacity: .5
+				filter: blur(10px)
+	&-logo
+		img
+			width: 100px
+			height: auto
+
+section
+	.formhead
+		margin: 0
+		font-size: 30px
+		color: #fff
+	p
+		margin-top: 0
+
+.button
+	margin-top: 40px
+
+// =============================    4-й блок  конец ===============================
+
+// =============================    5-й блок  начало ==============================
+
+.reviews
+	text-align: center
+.owl-carousel
+	.owl-dots
+		width: 100%
+		text-align: center
+		margin-top: 60px
+		.owl-dot
+			width: 8px
+			height: 8px
+			background-color: #fff
+			border-radius: 50%
+			display: inline-block
+			margin: 7px
+			transition: background-color .5s ease, transform .5s ease
+			&.active
+				background-color: $accent
+				transform: scale(1.4)
+
+.review
+	margin-top: 20px
+	&-header
+		font-family: 'times New Roman, serif'
+		font-style: italic
+		font-size: 30px
+		font-weight: bold
+		margin-bottom: 30px
+	&-data
+		font-family: 'times New Roman, serif'
+		font-style: italic
+		font-size: 15px
+		color: rgba(255,255,255, .3)
+	&-stars
+		margin: 25px 0 35px
+		color: $accent
+		font-size: 14px
+		.fa
+			margin: 0 2px
+	&-text
+		color: rgba(255,255,255, .6)
+		font-weight: 300
+
+.quotes
+	position: absolute
+	width: 100%
+	&::before, &::after
+		content: ",,"
+		position: absolute
+		font-size: 56px
+		color: $accent
+		font-family: 'times New Roman, serif'
+		font-weight: bold
+		line-height: 0
+	&::before
+		left: -50px
+		top: 218px
+		transform: rotate(180deg)
+	&::after
+		right: -10px
+		top: 183px
+		transform: rotate(0)
+
+// =============================    5-й блок  начало ===============================
+
+.s
+	&-partners
+		.partner
+			width: 100%
+			display: flex
+			margin: auto
+		.owl-stage
+			display: flex
+			align-items: center
+			.owl-item
+				margin-top: 30px
+			img
+				max-width: 100%
+				width: auto
+				display: inline-block
+				margin: auto
+		.owl-nav
+			position: absolute
+			top: 0
+			width: 100%
+			z-index: 2
+			> button
+				position: absolute
+				top: 50px
+				color: #999!important
+				font-size: 30px!important
+				transition: opasity .5s ease
+				&:hover
+					opacity: .6
+				&.owl-prev
+					left: -60px
+					padding: 0 15px!important
+				&.owl-next
+					right: -60px
+					padding: 0 15px!important
+		&::before
+			background-color: #fff
+		.h2
+			margin-top: 10px
+			span
+				color: $accent
+
+// =============================    5-й блок  конец  ===============================
+// =============================    6-й блок  начало ===============================
+
+.main-footer
+	background-color: #242424
+	padding: 3% 0
+	color: #fff
+	font-size: 0.8em
+.footer-column
+	margin: 15px 0
+
+
+.logo-footer
+	width: 125px
+	height: auto
+	+ p
+		color: #666
+		padding: 0
+		margin:
+			bottom: 15px
+			top: 15px
+		font-size: 14px
+
+.social-footer
+	margin-top: 38px
+	.soc
+		li
+			display: inline-block
+			margin: 3px
+			a
+				color: #ababab
+				margin-bottom: 0
+				transition: color .5s ease, background-color .5s ease
+				&:hover
+					color: rgba(#fff, .8)
+
+.footer-menu
+	ul
+		padding: 0
+		margin: 0
+		list-style-type: none
+		li.active
+			a
+				color: $accent
+				&::before
+					color: $accent
+		a
+			color: #979797
+			font-size: 16px
+			transition: color .5s ease
+			display: inline-block
+			padding: 5px 0
+			text-decoration: underline
+			padding-left: 20px
+			position: relative
+			&:hover, &:focus
+				color: $accent
+				&::before
+					color: $accent
+			&::before
+				position: absolute
+				font-family: "Font Awesome 5 Free"
+				content: '\f3a5'
+				left: 0
+				top: 6px
+				font-size: 14px
+				color: #fff
+				transition: color .5s ease
+				margin-right: 12px //?
+				
+.footer-addr
+	position: relative
+	font-size: 15px
+	padding-left: 25px
+	margin: 0 0 28px
+	.fa
+		position: absolute
+		left: 0
+		top: 1px
+		font-size: 18px
+		color: #555
+	.footer-phone
+		font-size: 26px
+		font-family: firasans, sans-serif
+		padding-top: 10px
+		display: block
+		.fa
+			top: 16px
+			left: 3px
+			font-size: 20px
+
+.map
+	max-height: 160px
+	opacity: .7
+	transition: opacity .5s ease
+	&:hover
+		opacity: 1
+		
+.top
+	position: fixed
+	bottom: 25px
+	right: -100px
+	background-color: #e0e0e0
+	z-index: 12
+	border-radius: 10em
+	color: #666
+	font-size: 26px
+	width: 50px
+	height: 50px
+	text-align: center
+	line-height: 50px
+	cursor: pointer
+	transition: all .3s ease
+	opacity: .5
+	&:hover
+		background-color: $accent
+		opacity: 1
+	&.active
+		right: 25px
+
+
+
+
+
+
+
+
+
+// =============================    6-й блок  конец  ===============================
+
+
+
+
+
+
+ 
+
+@import "media" // Всегда в конце

@@ -232,7 +232,7 @@ li a{
 	font-family: "MullerNarrow-Light","Arial",sans-serif;
 	font-weight: bold;
     font-size: 30px;
-    padding: 30px 0;
+    padding: 30px 0 0;
     text-align: center;
 }
 
@@ -258,7 +258,8 @@ li a{
 	max-width: 33.3333%;
 	width: 100%;
 	box-sizing: border-box;
-	margin: 0 auto;
+	margin: 30px auto 0;
+
 
 }
 
@@ -266,12 +267,17 @@ li a{
 	margin: 0 auto;
 	border: 2px solid #e1e1e1;
 	width: 18rem;
+	height: 100%; /*?*/
 
-
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
 }
 
 .wrapper-img {
-	/*height: 346px;*/
 	height: 200px;
 	overflow: hidden;
 	border-bottom: 2px solid #e1e1e1;
@@ -300,13 +306,21 @@ li a{
 	background-image: url(../img/img_adaptive/MACBOOK_nerds_a.jpg);
 }
 
-.third-job {
-	background-image: url(../img/img_adaptive/MACBOOK_divier_a.jpg);
+.htmlAcademy {
+	padding: 15px 0 0;
 }
 
 .third-job {
-	background-image: url(../jobs/karo-karo-karo/app/img/screen/fours_ab.jpg);
+	background-image: url(../jobs/karo-karo-karo/app/img/screen/karo.jpg);
 	background-position: center;
+	/*border-bottom: 1px solid black;*/
+}
+
+.fourth-job {
+	background-image: url(../img/img_adaptive/O33QW51-2.jpg);
+	background-position: center;
+	-webkit-background-size: cover;
+	background-size: cover;
 }
 
 /*====== картинки Макс конец ======*/
@@ -402,9 +416,21 @@ li a{
 /*===== popup end   ===== >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 .job .block-title {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
 	background: rgba(0,0,0,.1);
     background-repeat: repeat;
     padding-bottom: 15px;
+    flex-grow: 1;
+    justify-content: space-between;
 }
 
 .job h3 {
@@ -470,7 +496,6 @@ li a{
 	width: 100px;
 	height: 100px;
 }
-
 
 
 
