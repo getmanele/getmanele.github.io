@@ -157,12 +157,6 @@ li a{
 	margin: 0 auto;
 }
 
-.about-me_photo {
-	
-	width: 256px;
-	height: 256px;
-}
-
 .about-me__photo img {
 	display: block;
 	max-width: 100%;
@@ -177,6 +171,32 @@ li a{
 	font-size: 24px;
 	padding: 30px 50px;
 }
+
+.top {
+	position: fixed;
+	bottom: 25px;
+	right: -100px;
+	background-color: #e0e0e0;
+	z-index: 12;
+	border-radius: 10em;
+	color: #666;
+	font-size: 26px;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	cursor: pointer;
+	transition: all .3s ease;
+	opacity: .5;
+}
+.top:hover {
+	background-color: $accent;
+	opacity: 1;
+}
+.top.active {
+	right: 25px
+}
+
 
 
 /*  3) ==========   Skills   ========== */
@@ -291,8 +311,6 @@ li a{
 }
 
 /*====== картинки Макс ======*/
-
-
 
 .wrapper-img {
 	-webkit-background-size: contain;
