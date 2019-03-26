@@ -1,0 +1,53 @@
+body {
+	position: relative;
+	padding-top: 100px;
+}
+
+.title {
+	text-align: center;
+}
+
+.field {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin: 50px auto;
+	border: 1px solid black;
+	width: 640px;
+	height: 640px;
+	flex-wrap: wrap;
+}
+
+.excel {
+	width: 78px;
+	height: 78px;
+	border: 1px solid black;
+	font-size: 50px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.current {
+	color: transparent;
+	background-image: url(../img/horse.png);
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.button {
+	position: absolute;
+	top: 200px;
+	left: 200px;
+	padding: 15px 25px;
+	color: #fff;
+	background-color: brown;
+	border-radius: 5px;
+	font-size: 25px;
+}

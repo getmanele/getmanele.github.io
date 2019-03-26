@@ -1,0 +1,41 @@
+.main-h1 {
+	text-align: center;
+}
+
+.allExamples {
+	display: block;
+	background-color: #e4e9ed;
+	border-radius: 10px;
+	transition: all 0.3s ease;
+	-webkit-box-shadow: -19px 14px 37px -4px rgba(107,103,107,0.64);
+	-moz-box-shadow: -19px 14px 37px -4px rgba(107,103,107,0.64);
+	box-shadow: -19px 14px 37px -4px rgba(107,103,107,0.64);
+	
+	padding: 10px 20px;
+	max-width: 300px;
+	width: 100%;
+	margin: 0 auto 30px;
+}
+
+.allJsExamples {
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	font-size: 25px;
+	text-align: center;
+}
+
+.allExamples:hover {
+	-webkit-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
+
+
+
+
+
+
+
+
