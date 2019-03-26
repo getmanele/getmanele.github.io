@@ -1,5 +1,7 @@
 .main-h1 {
 	text-align: center;
+	font-family: "MullerNarrow-Light","Arial",sans-serif;
+	font-weight: 800px;
 }
 
 .allExamples {
@@ -19,10 +21,12 @@
 
 .allJsExamples {
 	display: block;
-	text-decoration: none;
-	color: #fff;
-	font-size: 25px;
 	text-align: center;
+	text-decoration: none;
+	color: #000;
+	font-size: 25px;
+	font-weight: 600;
+	font-family: "MullerNarrow-Light","Arial",sans-serif;
 }
 
 .allExamples:hover {
