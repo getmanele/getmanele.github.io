@@ -1,5 +1,11 @@
+* {
+	/*box-sizing: border-box;*/
+}
+
 body {
 	position: relative;
+	padding: 0;
+	margin: 0;
 }
 
 .title {
@@ -12,7 +18,7 @@ body {
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
-	margin: 100px auto;
+	margin: 30px auto;
 	border: 1px solid black;
 	width: 640px;
 	height: 640px;
@@ -41,9 +47,10 @@ body {
 }
 
 .button {
-	position: absolute;
-	top: 50px;
-	left: calc(50% - 58px);
+	display: block;
+	max-width: 115px;
+	width: 100%;
+	margin: 0 auto;
 	padding: 15px 25px;
 	color: #fff;
 	background-color: brown;
@@ -51,9 +58,40 @@ body {
 	font-size: 25px;
 }
 
+@media only screen and (max-width: 768px) {
+	.field {
+		max-width: 640px;
+		width: 100%;
+	}
+}
 
+@media only screen and (max-width: 640px) {
+	.field {
+		max-width: 464px;
+		width: 100%;
+		max-height: 464px;
+		height: 100%;
+	}
+	.excel {
+		width: 56px;
+		height: 56px;
+		font-size: 35px;
+	}
+}
 
-
+@media only screen and (max-width: 480px) {
+	.field {
+		max-width: 304px;
+		width: 100%;
+		max-height: 304px;
+		height: 100%;
+	}
+	.excel {
+		width: 36px;
+		height: 36px;
+		font-size: 30px;
+	}
+}
 
 
 
