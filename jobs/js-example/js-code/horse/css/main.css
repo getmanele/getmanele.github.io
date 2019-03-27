@@ -1,6 +1,5 @@
 body {
 	position: relative;
-	padding-top: 100px;
 }
 
 .title {
@@ -13,7 +12,7 @@ body {
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
-	margin: 50px auto;
+	margin: 100px auto;
 	border: 1px solid black;
 	width: 640px;
 	height: 640px;
@@ -43,8 +42,8 @@ body {
 
 .button {
 	position: absolute;
-	top: 200px;
-	left: 200px;
+	top: 50px;
+	left: calc(50% - 58px);
 	padding: 15px 25px;
 	color: #fff;
 	background-color: brown;
