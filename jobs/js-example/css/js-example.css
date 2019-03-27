@@ -1,7 +1,12 @@
+body {
+	padding: 0;
+	margin: 0;
+}
+
 .main-h1 {
 	text-align: center;
 	font-family: "MullerNarrow-Light","Arial",sans-serif;
-	font-weight: 800px;
+	font-weight: 800;
 }
 
 .allExamples {
@@ -34,6 +39,36 @@
 	-ms-transform: scale(1.2);
 	transform: scale(1.2);
 }
+
+@media only screen and (max-width: 550px) {
+	.main-h1 {
+		font-size: 35px;
+	}
+	.allExamples {
+		max-width: 400px;
+		padding: 20px 20px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
