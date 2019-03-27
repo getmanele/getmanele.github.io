@@ -1,3 +1,7 @@
+* {
+	box-sizing: border-box;
+}
+
 body {
 	padding: 0;
 	margin: 0;
@@ -7,6 +11,11 @@ body {
 	text-align: center;
 	font-family: "MullerNarrow-Light","Arial",sans-serif;
 	font-weight: 800;
+}
+
+.wrapper {
+	width: 100%;
+	padding: 0 10px;
 }
 
 .allExamples {
@@ -40,12 +49,13 @@ body {
 	transform: scale(1.2);
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 768px) {
 	.main-h1 {
 		font-size: 35px;
 	}
 	.allExamples {
 		max-width: 400px;
+		width: 100%;
 		padding: 20px 20px;
 	}
 }
