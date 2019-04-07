@@ -245,6 +245,22 @@ li a{
 	margin: 10px 0;
 }
 
+/* наведение на скил */
+
+.js img {
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+ }
+
+.js img:hover {
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
+
 
 /*  4) ==========   Portfolio   ========== */
 
