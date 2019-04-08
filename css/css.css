@@ -48,7 +48,7 @@ ul, li, a ,p {
 	-webkit-background-size: cover;
 	background-size: cover;
 	background-color: rgb(68, 68, 68);
-	background-image: url('../img/main-bg.jpg');
+	background-image: url('../img/main-bg.webp');
 	background-position: left top;
 	
 }
