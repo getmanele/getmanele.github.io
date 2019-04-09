@@ -29,7 +29,8 @@ body {
 
 	padding: 0;
 	margin: 0;
-	background: url('../img/about-me.png');
+	/*background: url('../img/about-me.png');*/
+	background-color: #191e22;
 }
 
 ul, li, a ,p {
@@ -158,6 +159,14 @@ li a{
 }
 
 .about-me__photo img {
+	display: block;
+	max-width: 31%;
+	margin: 0 auto;
+	border: 5px solid #b7b6b6ab;
+	border-radius: 50%;
+}
+
+.about-me__photo-responsive img {
 	display: block;
 	max-width: 31%;
 	margin: 0 auto;
