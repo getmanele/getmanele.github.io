@@ -169,6 +169,7 @@ li a{
 .about-me__photo-responsive img {
 	display: block;
 	max-width: 31%;
+	height: auto;
 	margin: 0 auto;
 	border: 5px solid #b7b6b6ab;
 	border-radius: 50%;
