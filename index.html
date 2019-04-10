@@ -78,20 +78,49 @@
 					         alt="Девушка пьёт кофе">    
 					</picture> -->
 
-					<!-- <picture>
-					  <source media="(min-width: 800px)" srcset="head.jpg, head-2x.jpg 2x">
-					  <source media="(min-width: 450px)" srcset="head-small.jpg, head-small-2x.jpg 2x">
-					  <img src="head-fb.jpg" srcset="head-fb-2x.jpg 2x" alt="a head carved out of wood">
-					</picture> -->
-
 					<picture class="about-me__photo-responsive">
-						<source media="(min-width: 768px)" 
-							srcset="img/rost.webp, img/rost-2x.webp 2x">
-						<source media="(min-width: 550px)" 
-							srcset="img/rost.webp, img/rost-2x.webp 2x">
-						<!-- <img src="rost.webp" srcset="rost-2x.webP 2x" alt="моя фотография"> -->
-						<img src="img/rost.webp" srcset="img/rost.webp 2x" alt="моя фотография">
+					  <source media="(min-width: 1024px)" srcset="img/rost/rost-m-1024-1x.webp, img/rost/rost-m-1024-2x.webp 2x">
+					  <source media="(min-width: 768px)" srcset="img/rost/rost-m-768-1x.webp, img/rost/rost-m-768-2x.webp 2x">
+					  <source media="(min-width: 480px)" srcset="img/rost/rost-m-480-1x.webp, img/rost/rost-m-480-2x.webp 2x">
+					  <source media="(min-width: 320px)" srcset="img/rost/rost-m-320-1x.webp, img/rost/rost-m-320-2x.webp 2x">
+					  <source media="(max-width: 321px)" srcset="img/rost/rost-m-320-1x.webp, img/rost/rost-m-320-2x.webp 2x">
+					  <img src="img/rost/rost-m.webp" srcset="img/rost/rost-m.webp 2x" alt="test">
 					</picture>
+
+
+
+<!-- mozilla start -->
+
+				<!-- https://developer.mozilla.org/ru/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images -->
+			<!--    <img srcset="elva-fairy-320w.jpg 320w,
+					             elva-fairy-480w.jpg 480w,
+					             elva-fairy-800w.jpg 800w"
+					     sizes="(max-width: 320px) 280px,
+					            (max-width: 480px) 440px,
+					            800px"
+					     src="elva-fairy-800w.jpg" alt="Elva dressed as a fairy"> -->
+
+					<!-- example -->
+<!-- 					<img class="about-me__photo-responsive" 
+						 srcset="img/rost/rost-320px.webp 320px, img/rost/rost1.webp 2x 1000px,
+					             img/rost/rost-480px.webp 480px,
+					             img/rost/rost.webp 800px"
+					     sizes="(max-width: 320px) 280px,
+					            (max-width: 480px) 440px,
+					            800px"
+					     src="img/rost/rost.webp" alt="my photo"> -->
+
+<!-- mozilla end -->
+
+
+<!-- 					<picture class="about-me__photo-responsive">
+						<source media="(min-width: 768px)" 
+							srcset="img/test/768.png, img/test/768.png 2x">
+						<source media="(min-width: 550px)" 
+							srcset="img/test/480.png, img/test/480.png 2x">
+						<img src="rost.webp" srcset="rost-2x.webP 2x" alt="моя фотография">
+						<img src="img/test/1024.png" srcset="img/test/1024.png 2x" alt="моя фотография">
+					</picture> -->
 
 
 
