@@ -54,6 +54,10 @@ ul, li, a ,p {
 	
 }
 
+.no-webp {
+	background-image: url('../img/main-bg.jpg');
+}
+
 .menu--wrapper {
 	width: 100%;
 }
