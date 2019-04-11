@@ -382,26 +382,25 @@ li a{
 
 /*===== popup begin ===== >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
-#myImg-hover, #myImg2, #myImg3, #myImg4, #myImg5 {
+#myImg-hover, #myImg2-hover, #myImg3, #myImg4, #myImg5 {
     cursor: pointer;
     transition: 0.3s;
     /*visibility: hidden;*/
     opacity: 0;
 }
 
-#myImg {
+#myImg, #myImg-2 {
 	cursor: pointer;
 	transition: 0.3s;
 	/*visibility: hidden;*/
 	opacity: 0;
 }
 
-#myImg:hover {
+/*#myImg:hover {
 	opacity: 1;
-}
+}*/
 	
-
-#myImg-hover:hover, #myImg2:hover, #myImg3:hover, #myImg4:hover, #myImg5:hover {
+#myImg-hover:hover, #myImg2-hover:hover, #myImg3:hover, #myImg4:hover, #myImg5:hover {
 	opacity: 1;
 }
 
