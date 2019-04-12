@@ -24,9 +24,9 @@ imgJ2.onclick = function(){
     modalImg.src = img2.src;
     captionText.innerHTML = this.alt;
 }
-img3.onclick = function(){
+imgJ3.onclick = function(){
     modal.style.display = "block";
-    modalImg.src = this.src;
+    modalImg.src = img3.src;
     captionText.innerHTML = this.alt;
 }
 img4.onclick = function(){

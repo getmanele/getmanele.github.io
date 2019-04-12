@@ -383,14 +383,14 @@ li a{
 
 /*===== popup begin ===== >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
-#myImg-hover, #myImg2-hover, #myImg3, #myImg4, #myImg5 {
+#myImg-hover, #myImg2-hover, #myImg3-hover, #myImg4, #myImg5 {
     cursor: pointer;
     transition: 0.3s;
     /*visibility: hidden;*/
     opacity: 0;
 }
 
-#myImg, #myImg-2 {
+#myImg, #myImg-2, #myImg-3 {
 	cursor: pointer;
 	transition: 0.3s;
 	/*visibility: hidden;*/
@@ -401,7 +401,7 @@ li a{
 	opacity: 1;
 }*/
 	
-#myImg-hover:hover, #myImg2-hover:hover, #myImg3:hover, #myImg4:hover, #myImg5:hover {
+#myImg-hover:hover, #myImg2-hover:hover, #myImg3-hover:hover, #myImg4:hover, #myImg5:hover {
 	opacity: 1;
 }
 
