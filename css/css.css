@@ -375,7 +375,7 @@ li a{
     opacity: 0;
 }
 
-#myImg, #myImg-2, #myImg-3 {
+#myImg, #myImg2, #myImg3 {
 	cursor: pointer;
 	transition: 0.3s;
 	/*visibility: hidden;*/
