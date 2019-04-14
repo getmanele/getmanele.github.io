@@ -370,6 +370,8 @@ li a{
 
 #myImg-hover, #myImg2-hover, #myImg3-hover, #myImg4, #myImg5 {
     cursor: pointer;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
     /*visibility: hidden;*/
     opacity: 0;
@@ -377,6 +379,8 @@ li a{
 
 #myImg, #myImg2, #myImg3 {
 	cursor: pointer;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
 	transition: 0.3s;
 	/*visibility: hidden;*/
 	opacity: 0;
