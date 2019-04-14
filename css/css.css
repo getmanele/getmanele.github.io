@@ -110,21 +110,6 @@ li a{
 	position: relative;
 }
 
-/*.im:after {
-	content: "";
-	position: absolute;
-	width: 200px;
-	height: 150px;
-	background-image: url(../img/hat.png);
-	background-position: center;
-	-webkit-background-size: contain;
-	background-size: contain;
-	background-repeat: no-repeat;
-	right: -13px;
-	bottom: -9px;
-	transform: rotate(-5deg);
-}*/
-
 .im2 {
 	font-size: 45px;
 	color: #f8df20;
