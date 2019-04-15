@@ -174,7 +174,7 @@ li a{
 	position: fixed;
 	bottom: 25px;
 	right: -100px;
-	background-color: #e0e0e0;
+	background-color: #c9c9c9;
 	z-index: 12;
 	border-radius: 10em;
 	color: #666;
@@ -193,6 +193,30 @@ li a{
 }
 .top.active {
 	right: 25px
+}
+
+.top:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 13px;
+	left: 29px;
+	width: 4px;
+	height: 20px;
+	transform: rotate(-45deg);
+	background-color: #8d8d8d;
+}
+
+.top:after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 13px;
+	left: 18px;
+	width: 4px;
+	height: 20px;
+	transform: rotate(45deg);
+	background-color: #8d8d8d;
 }
 
 
