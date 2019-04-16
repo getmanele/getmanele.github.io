@@ -392,7 +392,7 @@ li a{
 
 /*===== popup begin ===== >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
-#myImg-hover, #myImg2-hover, #myImg3-hover, #myImg4-hover, #myImg5 {
+#myImg-hover, #myImg2-hover, #myImg3-hover, #myImg4-hover, #myImg5-hover {
     cursor: pointer;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
@@ -401,7 +401,7 @@ li a{
     opacity: 0;
 }
 
-#myImg, #myImg2, #myImg3, #myImg4 {
+#myImg, #myImg2, #myImg3, #myImg4, #myImg5 {
 	cursor: pointer;
 	-webkit-transition: 0.3s;
 	-o-transition: 0.3s;
@@ -414,7 +414,7 @@ li a{
 	opacity: 1;
 }*/
 	
-#myImg-hover:hover, #myImg2-hover:hover, #myImg3-hover:hover, #myImg4-hover:hover, #myImg5:hover {
+#myImg-hover:hover, #myImg2-hover:hover, #myImg3-hover:hover, #myImg4-hover:hover, #myImg5-hover:hover {
 	opacity: 1;
 }
 
