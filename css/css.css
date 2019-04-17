@@ -577,5 +577,181 @@ li a{
 	height: 100px;
 }
 
+/*============= media 1200px ======================*/
+
+@media (max-width: 1200px) {
+	.container {
+		width: 992px;
+	}
+
+	.skils__items {
+		max-width: 900px;
+	}
+}
+
+/*============= media 1200px end ==================*/
+
+/*============= media 992px =======================*/
+
+@media (max-width: 992px) {
+	.container {
+		width: 100%;
+	}
+
+	.portfolio__items {
+		display: block;
+		margin: 0;
 
 
+	}
+
+	.job {
+		max-width: none;
+		margin-bottom: 50px;
+	}
+
+	.skils__items--all {
+		width: 40%;
+	}
+}
+
+/*============= media 992px end ===================*/
+
+/*============= media 768px =======================*/
+
+
+@media (max-width: 768px) {
+	.main-header {
+		height: 500px;
+	}
+
+	.menu__list {
+		-ms-flex-pack: distribute;
+		justify-content: space-around;
+	}
+
+	.menu__list li {
+		text-align: center;
+	}
+
+	li a {
+		font-size: 20px;
+	}
+
+	.main-h1 {
+		left: calc(100%/2);
+	}
+
+	.im {
+		font-size: 39px;
+	}
+
+	.main-h1 .im:after {
+		content: "";
+		width: 100px;
+		height: 75px;
+		background-image: url(../img/hat.png);
+		background-position: center;
+		-webkit-background-size: contain;
+		background-size: contain;
+		background-repeat: no-repeat;
+		right: -34px;
+		bottom: 5px;
+	}
+
+	.im2, .im3 {
+		font-size: 16px;
+	}
+
+	.about-me__title p {
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+/*3) ==========   Skills   ==========	*/
+
+	/*.skils__items--all {
+		width: 100%;
+	}*/
+
+/*  4) ==========   Portfolio   ========== */
+
+	.portfolio__items {
+		display: block;
+	}
+
+	.job {
+		width: 100%;
+		margin: 0 auto 50px;
+
+	}
+
+c
+
+}
+
+
+@media (max-width: 700px) {
+	.skils__items--all {
+		width: 100%;
+	}
+
+	.menu__list {
+		display: block;
+	}
+
+	.menu__list li {
+		text-align: center;
+		border: 1px solid #282922;
+	}
+
+	.main-h1 {
+		left: calc(100%/2);
+		top: 70%;
+	}
+}
+
+/*============= media 768px end ==================*/
+
+
+/*============= media 550px ======================*/
+
+@media (max-width: 550px) {
+	.menu__list {
+		display: block;
+
+	}
+
+	.menu__list li {
+		text-align: center;
+		border: 1px solid #282922;
+	}
+
+	.main-h1 {
+		top: 70%;
+		left: calc(100%/2);
+	}
+
+	.main-h1 .im:after {
+		content: "";
+		width: 100px;
+		height: 75px;
+		background-image: url(../img/hat.png);
+		background-position: center;
+		-webkit-background-size: contain;
+		background-size: contain;
+		background-repeat: no-repeat;
+		right: -34px;
+		bottom: 5px;
+	}
+
+	.portfolio-items-wrapper {
+		width: 16em;
+	}
+
+	.social-links--contrast li {
+		padding: 0 10px;
+	}
+}
+
+/*============= media 550px end ==================*/
