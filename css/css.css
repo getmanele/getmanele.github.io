@@ -204,7 +204,8 @@ li a{
 
 .about-me__photo img {
 	display: block;
-	max-width: 31%;
+	/*max-width: 31%;*/
+	max-width: 375px;
 	margin: 0 auto;
 	border: 5px solid #b7b6b6ab;
 	border-radius: 50%;
@@ -212,7 +213,7 @@ li a{
 
 .about-me__photo-responsive img {
 	display: block;
-	max-width: 31%;
+	/*max-width: 31%;*/
 	height: auto;
 	margin: 0 auto;
 	border: 5px solid #b7b6b6ab;
@@ -726,6 +727,11 @@ li a{
 
 	.im2, .im3 {
 		font-size: 16px;
+	}
+
+	.about-me__photo-responsive img {
+		max-width: 275px;
+		width: 100%;
 	}
 
 	.about-me__title p {
