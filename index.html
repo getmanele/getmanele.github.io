@@ -32,12 +32,12 @@
 
 <!-- 1) Header & menu/title -->
 
-	<header class="main-header">
+	<header class="main-header" id="mainHeader" onclick="myPopup()">
 		<div class="menu--wrapper">
-			<nav class="main-nav">
+			<nav class="main-nav" id="mainNav" onclick="myPopup()">
 				<input type="checkbox" name="toggle" id="menu" class="toggleMenu">
         		<label for="menu" class="toggleMenu"><i class="fa fa-bars" aria-hidden="true"></i>Меню</label>
-				<ul class="menu__list">
+				<ul class="menu__list" id="menuUl">
 					<li>
 						<a href="#about-me">Обо мне</a>
 					</li>
@@ -138,7 +138,7 @@
 				</div>
 				<div class="about-me__title">
 					<p class="about-me__text">
-						Приветствую!<br>Владею HTML <sup>5</sup>/CSS <sup>3</sup>/ bootstrap <sup>4</sup>. Система контроля версий - Github. <br> В данный момент самостоятельно изучаю нативный JS,препроцессор SASS <br><br> 
+						Приветствую!<br>Владею HTML <sup>5</sup>/CSS <sup>3</sup>/ bootstrap <sup>4</sup>. Система контроля версий - Git. <br> В данный момент самостоятельно изучаю нативный JS,препроцессор SASS <br><br> 
 
 						HTML — знание основных тегов, аттрибутов. Понимание, как его писать в принципе.Типографика — умение отформатировать текст. Семантика — понимание, что для определённых задач есть определённые теги. Растровая и векторная графика. <br>
 
@@ -235,7 +235,7 @@
 				</div>
 				<div class="skills__text">
 					<h3 class="skills__text--h3">
-						Github
+						Git
 					</h3>
 					<p class="skills__text--p">
 						Контроль версий и<br>commit, push & pull <br>проектов.
